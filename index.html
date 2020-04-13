@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- for Google -->
+  <meta name="description" content="Snake Timeline" />
+  <meta name="keywords" content="visualization, d3, timeline" />
+  <meta name="author" content="Puripant Ruchikachorn" />
+
+  <!-- for Facebook -->
+  <meta property="og:title" content="Snake Timeline" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://puripant.ruchikachorn.com/snake-timeline/thumbnail.png" />
+  <meta property="og:url" content="http://puripant.ruchikachorn.com/snake-timeline/" />
+  <meta property="og:description" content="A timeline that shows two alternating event types" />
+
+  <!-- for Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Snake Timeline" />
+  <meta name="twitter:description" content="A timeline that shows two alternating event types" />
+  <meta name="twitter:image" content="http://puripant.ruchikachorn.com/snake-timeline/thumbnail.png" />
+
+  <title>Snake Timeline</title>
+  <link href="main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Chonburi" rel="stylesheet">
+</head>
+
+<body>
+  <div id=title><h1>Snake Timeline</h1></div>
+  <div class="buttons">
+    <div id="transform-button-snake" class="button noselect highlighted" onclick="transform('snake')">🐍 Snake</div>
+    <div id="transform-button-fish" class="button noselect" onclick="transform('fish')">🐟 Fish</div>
+  </div>
+  <div id="chart"></div>
+  
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
